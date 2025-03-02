@@ -24,6 +24,10 @@
 - User registration and profile creation (for Challenge a Friend feature)
 - Fun facts and trivia for each destination
 
+## Demo
+
+You can try out the GoBuddy live [here](https://globetrotter-m5vh.onrender.com).
+
 ## Technologies Used
 
 - JAVA17
