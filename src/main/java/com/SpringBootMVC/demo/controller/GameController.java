@@ -88,7 +88,7 @@ public class GameController {
         }
 
         // Generate a unique invite link based on the user's ID
-        String inviteLink = "http://localhost:8080/game/invite?username=" + username;
+        String inviteLink = "https://globetrotter-m5vh.onrender.com?username=" + username;
 
         // Generate dynamic image with score
         String imageUrl = generateDynamicImage(user.getUsername(), user.getScore());
@@ -141,7 +141,8 @@ public class GameController {
 
     private String generateDynamicImage(String username, int score) {
         // Placeholder: Use a service like Cloudinary or canvas-based image generator
-        return "https://dummyimage.com/600x400/000/fff&text=" + username + "'s+Score:+ " + score;
+        System.out.println(score);
+        return username + "'s+Score:+ " + score;
     }
 
 

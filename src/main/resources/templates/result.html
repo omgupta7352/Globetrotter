@@ -3,9 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Result</title>
+  <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 <body>
 
+
+<nav>
+  <div class="head">Globetrotter Quiz</div>
+</nav>
+
+<div class="container">
 <!-- Feedback message for correct/incorrect answer -->
 <h2 th:text="${feedback}"></h2>
 
@@ -35,6 +42,7 @@
   <button onclick="copyInviteLink()">Copy Link</button>
 </div>
 
+</div>
 <script>
   function challengeFriend() {
       const username = prompt("Enter your username to challenge a friend:");

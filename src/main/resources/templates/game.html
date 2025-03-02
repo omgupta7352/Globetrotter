@@ -3,10 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <title>Globetrotter Game</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" th:href="@{/css/style.css}">
 </head>
 <body>
-<h1>Globetrotter Quiz</h1>
+
+<nav>
+  <div class="head">Globetrotter Quiz</div>
+</nav>
 
 <form action="/submitAnswer" method="POST">
   <!-- Correct Thymeleaf syntax for accessing destination name -->
