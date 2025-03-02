@@ -1,13 +1,7 @@
 # Globetrotter Quiz
 
-![Globetrotter Quiz](budgetblaze1.png)
-![](budgetblaze2.png)
-![](budgetblaze3.png)
-![](budgetblaze4.png)
-![](budgetblaze5.png)
-![](budgetblaze6.png)
-![](budgetblaze7.png)
-![](budgetblaze8.png)
+![Globetrotter Quiz](quiz1.png)
+![](quiz2.png)
 
 **Globetrotter** is an interactive quiz game where users guess famous destinations based on cryptic clues. Players can challenge their friends by sharing dynamic invite links, and the app features score tracking, animated feedback, and multiple-choice questions.
 
