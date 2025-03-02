@@ -71,7 +71,32 @@ To run this project locally, follow these steps:
     ```bash
     mvn spring-boot:run
     ```
-    
+
+## API Endpoints
+
+### 1. Start Game
+- **Method**: `GET`
+- **Endpoint**: `/`
+- **Description**: Start the game, fetches a random destination, clues, and fun facts.
+
+### 2. Submit Answer
+- **Method**: `POST`
+- **Endpoint**: `/submitAnswer`
+- **Parameters**: `username`, `destinationId`, `userAnswer`
+- **Description**: Submit user's answer, check correctness, and update score.
+
+### 3. Challenge Friend
+- **Method**: `POST`
+- **Endpoint**: `/challengeFriend`
+- **Parameters**: `username`
+- **Description**: Generate an invite link and dynamic image for challenging a friend.
+
+### 4. Handle Friend Invitation
+- **Method**: `GET`
+- **Endpoint**: `/game/invite`
+- **Parameters**: `username`
+- **Description**: Handle the invite link sent to a friend, redirect to the game page.
+
 
 ## Contributing
 
