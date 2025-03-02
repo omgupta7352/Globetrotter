@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>Globetrotter Game</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<h1>Globetrotter Quiz</h1>
+
+<form action="/submitAnswer" method="POST">
+  <!-- Correct Thymeleaf syntax for accessing destination name -->
+  <h2>Clues for <span th:text="${destination.name}"></span></h2>
+
+  <!-- Iterate through clues and display them -->
+  <ul>
+    <li th:each="clue : ${clues}">
+      <span th:text="${clue.clueText}"></span>
+    </li>
+  </ul>
+
+  <input type="text" name="username" placeholder="Enter your username">
+  <!-- Correct Thymeleaf syntax for hidden field value -->
+  <input type="hidden" name="destinationId" th:value="${destination.id}">
+
+  <label>Answer: </label>
+  <input type="text" name="userAnswer" placeholder="Your answer">
+  <button type="submit">Submit</button>
+</form>
+</body>
+</html>
