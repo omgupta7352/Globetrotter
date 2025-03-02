@@ -1,6 +1,6 @@
-# 
+# Globetrotter Quiz
 
-![BUDGETBLAZE](budgetblaze1.png)
+![Globetrotter Quiz](budgetblaze1.png)
 ![](budgetblaze2.png)
 ![](budgetblaze3.png)
 ![](budgetblaze4.png)
@@ -9,7 +9,7 @@
 ![](budgetblaze7.png)
 ![](budgetblaze8.png)
 
-The **BudgetBlaze** App is a robust financial management tool built with Spring Boot, Spring Security, and PostgreSQL. It offers secure sign-up and sign-in, along with easy expense management through CRUD operations. The user-friendly interface, designed with Thymeleaf and Bootstrap, ensures a smooth experience, while the filtering feature helps users organize and analyze their finances efficiently.
+**Globetrotter** is an interactive quiz game where users guess famous destinations based on cryptic clues. Players can challenge their friends by sharing dynamic invite links, and the app features score tracking, animated feedback, and multiple-choice questions.
 
 ## Table of Contents
 
@@ -21,3 +21,81 @@ The **BudgetBlaze** App is a robust financial management tool built with Spring 
 - [Contributing](#contributing)
 
 ## Features
+
+- Random clue generation with multiple-choice answers
+- Score tracking with feedback (confetti animation for correct answers, sad face for incorrect ones)
+- Play Again and Challenge a Friend options
+- Dynamic invite links for friend challenges
+- Responsive UI designed for a smooth user experience
+- User registration and profile creation (for Challenge a Friend feature)
+- Fun facts and trivia for each destination
+
+## Technologies Used
+
+- JAVA17
+- Spring Boot
+- Spring Web
+- Spring Data JPA
+- Spring Security
+- Spring MVC
+- PostgreSQL
+- Lombok
+- HTML
+- CSS
+- Thymeleaf
+- Maven
+
+
+## Installation
+
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+
+    ```bash
+   git clone https://github.com/omgupta7352/Globetrotter.git
+
+    ```
+
+2. Navigate to the project directory:
+
+    ```bash
+    cd /Globetrotter
+    ```
+
+
+3. Build and run the application:
+
+    ```bash
+    mvn clean install
+    ```
+
+    ```bash
+    mvn spring-boot:run
+    ```
+    
+
+## Contributing
+
+Contributions are welcome! If you would like to contribute to this project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix:
+
+    ```bash
+    git checkout -b feature/your-feature-name
+    ```
+
+3. Commit your changes:
+
+    ```bash
+    git commit -m 'Add some feature'
+    ```
+
+4. Push to the branch:
+
+    ```bash
+    git push origin feature/your-feature-name
+    ```
+
+5. Open a pull request on GitHub.
