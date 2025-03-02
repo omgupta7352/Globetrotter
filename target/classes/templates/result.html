@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <title>Result</title>
+</head>
+<body>
+
+<!-- Feedback message for correct/incorrect answer -->
+<h2 th:text="${feedback}"></h2>
+
+<!-- Total score display -->
+<h3>Your Total Score: <span th:text="${totalScore}"></span></h3>
+
+<!-- Correct/Incorrect answer animations -->
+<div th:if="${animation == 'confetti'}">
+  <!-- Display confetti animation -->
+  <p>🎉 Congratulations! You got it right!</p>
+</div>
+
+<div th:if="${animation == 'sad-face'}">
+  <!-- Display sad face animation -->
+  <p>😢 Don't worry, try again!</p>
+</div>
+
+<!-- Play Again button -->
+<button onclick="window.location.href='/game'">Play Again</button>
+
+<button onclick="challengeFriend()">Challenge a Friend</button>
+
+<!-- Add a section to display the copyable invite link -->
+<div id="inviteLinkContainer" style="display: none;">
+  <p>Copy the invite link and share it with your friend:</p>
+  <textarea id="inviteLink" rows="4" cols="50"></textarea>
+  <button onclick="copyInviteLink()">Copy Link</button>
+</div>
+
+<script>
+  function challengeFriend() {
+      const username = prompt("Enter your username to challenge a friend:");
+      if (username) {
+          fetch('/challengeFriend', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/x-www-form-urlencoded',
+              },
+              body: new URLSearchParams({
+                  username: username
+              })
+          })
+          .then(response => response.text())
+          .then(inviteMessage => {
+              // Show the invite link in the textarea
+              document.getElementById('inviteLinkContainer').style.display = 'block';
+              document.getElementById('inviteLink').value = inviteMessage;
+          });
+      }
+  }
+
+  // Function to copy the invite link
+  function copyInviteLink() {
+      var copyText = document.getElementById('inviteLink');
+      copyText.select();
+      document.execCommand("copy");
+      alert("Invite link copied to clipboard!");
+  }
+</script>
+
+
+</body>
+</html>
