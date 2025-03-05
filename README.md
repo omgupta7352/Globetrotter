@@ -9,6 +9,7 @@
 
 - [Features](#features)
 - [Demo](#demo)
+- [Diagram](#diagram)
 - [Technologies Used](#technologies-used)
 - [Installation](#installation)
 - [API Endpoints](#api-endpoints)
@@ -27,6 +28,9 @@
 ## Demo
 
 You can try out the GoBuddy live [here](https://globetrotter-m5vh.onrender.com).
+
+
+## Diagram
 
 ## Technologies Used
 
