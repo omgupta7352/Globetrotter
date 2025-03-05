@@ -63,6 +63,11 @@ You can try out the GoBuddy live [here](https://globetrotter-m5vh.onrender.com).
 
 ```
 
+**In this model:**
+
+- Destination has a one-to-many relationship with Clue and FunFact.
+- Clue and FunFact each have a foreign key (destination_id) that references Destination.
+
 ## Technologies Used
 
 - JAVA17
