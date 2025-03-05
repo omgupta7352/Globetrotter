@@ -32,6 +32,37 @@ You can try out the GoBuddy live [here](https://globetrotter-m5vh.onrender.com).
 
 ## Diagram
 
+```
++-----------------+              +-------------+
+|   Destination   |1           * |    Clue     |
++-----------------+ <----------> +-------------+
+| - id: Long      |              | - id: Long  |
+| - name: String  |              | - clueText: String |
+| - correctAnswer: String|       | - destination_id: Long|
++-----------------+              +-------------+
+        ^                               
+        |                               
+        |                                
+        |1           *         
+        |            +-------------+
+        |         *  |  FunFact    |
+        +------------+-------------+
+                     | - id: Long  |
+                     | - funFactText: String |
+                     | - destination_id: Long|
+                     +-------------+
+
++-----------------+
+|      User       |
++-----------------+
+| - id: Long      |
+| - username: String |
+| - score: Integer |
++-----------------+
+
+
+```
+
 ## Technologies Used
 
 - JAVA17
