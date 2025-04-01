@@ -1,4 +1,4 @@
-# Globetrotter Quiz
+# Globetrotter Quiz 🌐🌴
 
 ![Globetrotter Quiz](quiz1.png)
 ![](quiz2.png)
