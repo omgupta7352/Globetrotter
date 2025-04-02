@@ -5,7 +5,7 @@
 
 **Globetrotter** is an interactive quiz game where users guess famous destinations based on cryptic clues. Players can challenge their friends by sharing dynamic invite links, and the app features score tracking, animated feedback, and multiple-choice questions.
 
-## Table of Contents
+## Table of Contents 
 
 - [Features](#features)
 - [Demo](#demo)
@@ -28,7 +28,6 @@
 ## Demo
 
 You can try out the GoBuddy live [here](https://globetrotter-m5vh.onrender.com).
-
 
 ## Diagram
 
